@@ -37,6 +37,7 @@ class CountDown{
     startView(){
         const formatted = num => ('0'+num).slice(-2)
 
+        set('.evento-mes', formatted(this.event.getMonth()))
         set('.evento-dia', formatted(this.event.getDate()))
         set('.evento-horas', formatted(this.event.getHours()))
         set('.evento-minutos', formatted(this.event.getMinutes()))
