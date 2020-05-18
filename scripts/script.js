@@ -36,7 +36,8 @@ class CountDown{
 
     startView(){
         const formatted = num => ('0'+num).slice(-2)
-        set('.evento-dia', formatted(this.event.getDay()))
+
+        set('.evento-dia', formatted(this.event.getDate()))
         set('.evento-horas', formatted(this.event.getHours()))
         set('.evento-minutos', formatted(this.event.getMinutes()))
 
@@ -72,6 +73,7 @@ class CountDown{
 (function Main(){
     const dataEvento = new CountDown(2020,4,18)
     popup = false
+    window.data = dataEvento
 
     //dataEvento.setTimeView()
 
