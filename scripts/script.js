@@ -1,6 +1,17 @@
+function set(query, val){
+    try{
+        document.querySelectorAll(query).forEach(item => {
+            item.innerHTML = val
+        });
+    }catch{
+
+    }
+}
+
 class CountDown{
     constructor(...date){
         this.event = new Date(...date)
+        this.startView()
     }
 
     getDifference(){
@@ -23,15 +34,24 @@ class CountDown{
         }
     }
 
-    setTimeView(){
-        const set = (query,val) => document.querySelectorAll(query).forEach(item => {
-            item.innerHTML = val
-        });
-    
-        set('.data-dias', this.getDifference().days)
-        set('.data-horas', this.getDifference().hours)
-        set('.data-minutos', this.getDifference().minutes)
-        set('.data-segundos', this.getDifference().seconds)
+    startView(){
+        const formatted = num => ('0'+num).slice(-2)
+        set('.evento-dia', formatted(this.event.getDay()))
+        set('.evento-horas', formatted(this.event.getHours()))
+        set('.evento-minutos', formatted(this.event.getMinutes()))
+
+        this.updateView()
+
+        setInterval(() => {
+            this.updateView()
+        },1000)
+    }
+
+    updateView(){
+        set('.count-dias', this.getDifference().days)
+        set('.count-horas', this.getDifference().hours)
+        set('.count-minutos', this.getDifference().minutes)
+        set('.count-segundos', this.getDifference().seconds)
     }
 
     convertMillisecs(mili){
@@ -53,10 +73,7 @@ class CountDown{
     const dataEvento = new CountDown(2020,4,18)
     popup = false
 
-    dataEvento.setTimeView()
-    setInterval(() => {
-        dataEvento.setTimeView()
-    },1000)
+    //dataEvento.setTimeView()
 
     document.onmouseout = () => {
         if(!popup){
