@@ -1,4 +1,4 @@
-class DateTime{
+class CountDown{
     constructor(...date){
         this.event = new Date(...date)
     }
@@ -50,11 +50,20 @@ class DateTime{
 }
 
 (function Main(){
-    const dataEvento = new DateTime(2020,4,18)
+    const dataEvento = new CountDown(2020,4,18)
+    popup = false
 
     dataEvento.setTimeView()
     setInterval(() => {
         dataEvento.setTimeView()
     },1000)
+
+    document.onmouseout = () => {
+        if(!popup){
+            // popup mais elaborado aqui
+            popup = true
+            alert('mouse saiu')
+        }
+    }
 })()
 
