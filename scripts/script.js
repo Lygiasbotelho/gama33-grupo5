@@ -82,7 +82,7 @@ class CountDown{
         if(!popup){
             // popup mais elaborado aqui
             popup = true
-            alert('mouse saiu')
+            $('#popup').modal('show')
         }
     }
 })()
