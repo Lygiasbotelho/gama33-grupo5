@@ -84,28 +84,13 @@ class CountDown{
     }
 }
 
-(function Main(){
-    const dataEvento = new CountDown(2020,4,18)
-    popup = false
-    window.data = dataEvento
+class Email{
+    constructor(query){
+        const form = document.querySelector(query)
+        const name = form.querySelector('[name=name]')
+        const email = form.querySelector('[name=email]')
 
-    //dataEvento.setTimeView()
-
-    $(document).mouseleave(function () {
-        if(!popup){
-            // popup mais elaborado aqui
-            popup = true
-            $('#popup').modal('show')
-        }
-    });
-
-    $('#emailForm').submit(function(e){
-        e.preventDefault()
-        var form = $(this)
-        var url = form.attr('action')
-        console.log(url)
-
-        $.ajax({
+        const counterUp = () => $.ajax({
             type: 'POST',
             url: url,
             data: form.serialize(), // serializes the form's elements.  
@@ -115,6 +100,92 @@ class CountDown{
                alert(data); // show response from the php script.
             }
         })
+
+        form.onsubmit = () => {
+            e.preventDefault()
+
+            $.ajax({
+                url: '',
+                method: 'POST',
+                data: {
+                    u: '67dbf3aef57c87307dc7a7ae1', 
+                    id: 'e074a62f47', 
+                    EMAIL: email.value, 
+                    NAME: name.value
+                },
+                dataType: 'jsonp',
+                success: function(data)
+                {    
+                   counterUp()
+                   document.location.reload()
+                }
+            });
+        }
+    }
+}
+
+class Popup{
+    constructor(query){
+        this.popup = false
+
+        $(document).mouseleave(function () {
+            if(!this.popup){
+                // popup mais elaborado aqui
+                this.popup = true
+                $(query).modal('show')
+            }
+        });
+    }
+}
+
+(function Main(){
+    const dataEvento = new CountDown(2020,4,18)
+    const popUp = new Popup('#popup')
+    const email = new Email('#emailForm')
+    const eventOn = dataEvento.seconds > 0
+    const ifEvent = $('.if-event')
+    const elseEvent = $('.else-event')
+
+    console.log(eventOn)
+    if(eventOn){
+        elseEvent.hide()
+    }else{
+        ifEvent.hide()
+    }
+
+    //dataEvento.setTimeView()
+
+    $('#emailForm').submit(function(e){
+        e.preventDefault()
+        var form = $(this)
+        var url = form.attr('action')
+
+        var name = $('#formName').val()
+        var email = $('#formEmail').val()
+
+        console.log(name, email)
+
+        const counterUp = () => $.ajax({
+            type: 'POST',
+            url: url,
+            data: form.serialize(), // serializes the form's elements.  
+            dataType: "jsonp",
+            success: function(data)
+            {    
+               alert(data); // show response from the php script.
+            }
+        })
+
+        $.ajax({
+            url: '',
+            method: 'POST',
+            data: {u: '', id: '', EMAIL: email, NAME: name},
+            dataType: 'jsonp',
+            success: function(data)
+            {    
+               alert('tudo ok'); // show response from the php script.
+            }
+        });
     })
 })()
 

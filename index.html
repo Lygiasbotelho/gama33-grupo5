@@ -100,10 +100,10 @@
         <div class="col-md-8 headerForm">
           <form class="form-inline" id="emailForm" method="POST" action="https://api.countapi.xyz/hit/lifeoneline.com.br/cadastros">
             <div class="form-group">
-              <input type="text" class="form-control inputNome" placeholder="nome" >
+              <input name="name" type="text" class="form-control inputNome" placeholder="nome" >
 
               <div class="input-group mb-3">
-                <input type="email" class="form-control inputEmail" placeholder="seu melhor email"
+                <input name="email" type="email" class="form-control inputEmail" placeholder="seu melhor email"
                   aria-label="seu melhor email" aria-describedby="inscrever">
                 <div class="input-group-append">
                   <button class="btn btn-outline-secondary inputButton" type="submit" id="inscrever"><i
@@ -112,7 +112,6 @@
               </div>
             </div>
           </form>
-
         </div>
       </div>
     </div>
@@ -121,8 +120,7 @@
 
   <section id="contador">
     <div class="contadores text-center d-flex align-items-center">
-      <div class="container">
-
+      <div class="container if-event">
         <p class="lead">APROVEITE, O TEMPO ESTÁ ACABANDO ...</p>
         <div class="d-flex justify-content-center">
           <div>
@@ -142,7 +140,9 @@
             <p>segundos</p>
           </div>
         </div>
-
+      </div>
+      <div class="container else-event">
+        <p class="lead">Tempo esgotado</p>
       </div>
     </div>
 
