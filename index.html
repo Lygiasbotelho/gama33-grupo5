@@ -1,142 +1,245 @@
 <!doctype html>
 <html>
+
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NMDZZ6T');</script>
+  <!-- Google Tag Manager --
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NMDZZ6T');</script>
   <!-- End Google Tag Manager -->
-  
+
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
   <link rel="stylesheet" href="styles/style.css">
   <title>Evento LifeOneLine</title>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
+
 <body>
-  
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMDZZ6T"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
-    <!-- Modal -->
-    <div class="modal" id="popup" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>Modal body text goes here.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+
+  <!-- Google Tag Manager (noscript) --
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMDZZ6T" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Modal -->
+  <div class="modal" id="popup" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
-    
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  </div>
+
+  <header>
+    <div class="container-fluid">
+
+      <!--
+      <nav class="navbar navbar-expand-lg navbar-light">
         
         <div class="container-fluid container-fluid-max">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">oneline</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">CONTEÚDO <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+                <a class="nav-link" href="#">QUEM PARTICIPA</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#">APOIO</a>
               </li>
+             <li><input class="botaoNav" type="button" value="Cadastre-se"></li>
             </ul>
           </div>
           
         </div>
+      </nav>-->
+      <!--navbar-light-->
+      <nav class="navbar navbar-expand-lg menu">
+        <div class="container-fluid container-fluid-max">
+          <a class="navbar-brand" href="#home"><img id="logo" src="img/logo.jpg"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item menuItem">
+                <a class="nav-link" href="#">CONTEÚDO</a>
+              </li>
+              <li class="nav-item menuItem">
+                <a class="nav-link" href="#">CONVIDADOS</a>
+              </li>
+              <li class="nav-item menuItem">
+                <a class="nav-link" href="#">APOIO</a>
+              </li>
+
+              <input class="botaoNav" type="button" value="PARTICIPE">
+
+          </div>
+        </div>
       </nav>
-    </header>
-    <section>
-      <div class="jumbotron jumbotron-fluid text-center d-flex align-items-center">
-        <div class="container">
-          <h1 class="display-4">Evento super legal</h1>
-          <p>data do evento:</p>
-          <p class="display-3">
-            <span class="evento-dia"></span> /
-            <span class="evento-mes"></span> <br>
-            <span class="evento-horas"></span> :
-            <span class="evento-minutos"></span>
-          </p>
-          <p class="lead">um texto breve.</p>
-          <div class="d-flex justify-content-around">
-            <div>
-              <div class="display-2 count-dias"></div>
-              <p>dias</p>
+
+
+      <div class="row">
+        <div class="col-md-5 headerTitle">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+
+          <p>Proin ut felis feugiat, semper tortor at, commodo augue. Integer ullamcorper nisl sit amet interdum congue.
+            Duis pharetra quam urna, auctor.</p>
+        </div>
+        <div class="col"></div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-8 headerForm">
+          <form class="form-inline">
+            <div class="form-group">
+              <input type="text" class="form-control inputNome" placeholder="nome" >
+
+              <div class="input-group mb-3">
+                <input type="email" class="form-control inputEmail" placeholder="seu melhor email"
+                  aria-label="seu melhor email" aria-describedby="inscrever">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary inputButton" type="button" id="inscrever"><i
+                      class="fas fa-arrow-right"></i></button>
+                </div>
+              </div>
             </div>
-            <div>
-              <div class="display-2 count-horas"></div>
-              <p>horas</p>
-            </div>
-            <div>
-              <div class="display-2 count-minutos"></div>
-              <p>minutos</p>
-            </div>
-            <div>
-              <div class="display-2 count-segundos"></div>
-              <p>segundos</p>
-            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section id="contador">
+    <div class="contadores text-center d-flex align-items-center">
+      <div class="container">
+
+        <p class="lead">APROVEITE, O TEMPO ESTÁ ACABANDO ...</p>
+        <div class="d-flex justify-content-center">
+          <div>
+            <div class="display-4 count-dias"></div>
+            <p>dias</p>
+          </div>
+          <div>
+            <div class="display-4 count-horas"></div>
+            <p>horas</p>
+          </div>
+          <div>
+            <div class="display-4 count-minutos"></div>
+            <p>minutos</p>
+          </div>
+          <div>
+            <div class="display-4 count-segundos"></div>
+            <p>segundos</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <section id="visitantes">
+    <div class="visitantes">
+      <span class="acessos"></span> Acessos na página
+    </div>
+  </section>
+
+  <!--
+  <section>
+    <div class="jumbotron jumbotron-fluid text-center d-flex align-items-center">
+      <div class="container">
+        <h1 class="display-4">Evento super legal</h1>
+        <p>data do evento:</p>
+        <p class="display-3">
+          <span class="evento-dia"></span> /
+          <span class="evento-mes"></span> <br>
+          <span class="evento-horas"></span> :
+          <span class="evento-minutos"></span>
+        </p>
+        <p class="lead">um texto breve.</p>
+        <div class="d-flex justify-content-around">
+          <div>
+            <div class="display-2 count-dias"></div>
+            <p>dias</p>
+          </div>
+          <div>
+            <div class="display-2 count-horas"></div>
+            <p>horas</p>
+          </div>
+          <div>
+            <div class="display-2 count-minutos"></div>
+            <p>minutos</p>
+          </div>
+          <div>
+            <div class="display-2 count-segundos"></div>
+            <p>segundos</p>
           </div>
         </div>
       </div>
-    </section>
-    
-    <h1>
-      <span class="acessos"></span> acessos na página
-    </h1>
-    
-    <p>
-      tempo para evento: 
-      <span class="count-dias"></span> dias, 
-      <span class="count-horas"></span> horas, 
-      <span class="count-minutos"></span> minutos e 
-      <span class="count-segundos"></span> segundos 
-    </p>
-    
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    
-    <script src="scripts/script.js"></script>
-    
-  </body>
-  </html>
+    </div>
+  </section>--
+
+  <h1>
+    <span class="acessos"></span> acessos na página
+  </h1>-->
+  <!--
+  <p>
+    tempo para evento:
+    <span class="regressivo count-dias"></span> dias,
+    <span class="count-horas"></span> horas,
+    <span class="count-minutos"></span> minutos e
+    <span class="count-segundos"></span> segundos
+  </p>-->
+
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <script src="scripts/script.js"></script>
+
+</body>
+
+</html>

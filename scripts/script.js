@@ -54,10 +54,10 @@ class CountDown{
     }
 
     updateView(){
-        set('.count-dias', this.getDifference().days)
-        set('.count-horas', this.getDifference().hours)
-        set('.count-minutos', this.getDifference().minutes)
-        set('.count-segundos', this.getDifference().seconds)
+        set('.count-dias', `${this.getDifference().days} : `)
+        set('.count-horas', `${this.getDifference().hours} : `)
+        set('.count-minutos', `${this.getDifference().minutes} : `)
+        set('.count-segundos', `${this.getDifference().seconds}`)
     }
 
     countAcesses(action){
@@ -87,13 +87,13 @@ class CountDown{
     window.data = dataEvento
 
     //dataEvento.setTimeView()
-
+/*
     $(document).mouseleave(function () {
         if(!popup){
             // popup mais elaborado aqui
             popup = true
             $('#popup').modal('show')
         }
-    });
+    });*/
 })()
 
