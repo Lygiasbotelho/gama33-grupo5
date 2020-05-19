@@ -87,13 +87,13 @@ class CountDown{
     window.data = dataEvento
 
     //dataEvento.setTimeView()
-/*
+
     $(document).mouseleave(function () {
         if(!popup){
             // popup mais elaborado aqui
             popup = true
             $('#popup').modal('show')
         }
-    });*/
+    });
 })()
 
