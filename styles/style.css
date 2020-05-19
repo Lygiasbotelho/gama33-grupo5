@@ -4,25 +4,19 @@ html, body{
     margin: 0px;
     font-family: Roboto;
 }
-
 button {
     border: none;
 }
 a{
     color: #FAFAFA;
-}/*
-.container-fluid{
-    border: 1px solid yellow;
-}*/
+}
 header {
-   /* width: 1920px;
-    height: 1101px;*/
     width: 100%;
     height: auto;
     min-height: 75%;
     background-image: linear-gradient(to right, #d60b51, #a81fba);
     background-size: contain;
-    padding: 15px 12% 50px 12%;
+    padding: 10px 15% 50px 15%;
 }
 
 #logo{
@@ -83,7 +77,6 @@ header {
 }
 .headerForm {/*border: 1px solid yellow;*/
    margin-left: -10px;
-
 }
 
 .headerForm input{
@@ -98,19 +91,17 @@ header {
     max-width: 80%;
 }
 .headerForm .inputEmail{
-    width: 300px;
+    width: 280px;
     max-width: 80%;
     margin-top:15px;
     border-radius: 4px;
 }
 .headerForm .inputButton{
-    margin-top: 17px;
-    margin-left: -50px;
+    margin-top: 15px;
+    margin-left: -10px;
     border: none;
-    height: 35px;
-    z-index: 999;
+    height: 40px;
     background-color: #fff;
-   
 }
 .headerForm .inputButton:hover, .inputButton:active, .inputButton:visited{
     background-color: #fff;
@@ -122,15 +113,16 @@ header {
     height: 170px;
     font-weight: bold;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .lead{
     font-size: 16px;
-    
 }
-
+.display-6{
+    font-size: 40px;
+}
 .visitantes{
     background-color: #D40C55;
     text-align: right;
