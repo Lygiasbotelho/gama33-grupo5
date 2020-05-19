@@ -88,12 +88,12 @@ class CountDown{
 
     //dataEvento.setTimeView()
 
-    $(document).mouseleave(function () {
+ /*   $(document).mouseleave(function () {
         if(!popup){
             // popup mais elaborado aqui
             popup = true
             $('#popup').modal('show')
         }
-    });
+    });*/
 })()
 
