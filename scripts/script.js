@@ -34,19 +34,16 @@ class CountDown {
         }
     }
 
-    startView() {
+    startView(){
         set('.cadastros', 0)
         this.getCadastros()
             .then(res => set('.cadastros', res))
-
         const formatted = num => ('0' + num).slice(-2)
 
         set('.evento-mes', formatted(this.event.getMonth()))
         set('.evento-dia', formatted(this.event.getDate()))
         set('.evento-horas', formatted(this.event.getHours()))
         set('.evento-minutos', formatted(this.event.getMinutes()))
-
-
         this.updateView()
 
         setInterval(() => {
@@ -61,9 +58,9 @@ class CountDown {
         set('.count-segundos', `${this.getDifference().seconds}`)
     }
 
-    async getCadastros() {
+    async getCadastros(){
         let result = 0
-        await $.getJSON("https://api.countapi.xyz/get/lifeoneline.com.br/cadastros", function (response) {
+        await $.getJSON("https://api.countapi.xyz/get/lifeoneline.com.br/cadastros", function(response) {
             result = response.value
         });
         return result
@@ -99,7 +96,7 @@ class CountDown {
         }
     });
 
-    $('#emailForm').submit(function (e) {
+    $('#emailForm').submit(function(e){
         e.preventDefault()
         var form = $(this)
         var url = form.attr('action')
@@ -110,8 +107,10 @@ class CountDown {
             url: url,
             data: form.serialize(), // serializes the form's elements.  
             dataType: "jsonp",
-            success: function (data) {
-                alert(data); // show response from the php script.
+
+            success: function(data)
+            {    
+               alert(data); // show response from the php script.
             }
         })
     })
