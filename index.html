@@ -98,7 +98,7 @@
 
       <div class="row">
         <div class="col-md-8 headerForm">
-          <form class="form-inline">
+          <form class="form-inline" id="emailForm" method="POST" action="https://api.countapi.xyz/hit/lifeoneline.com.br/cadastros">
             <div class="form-group">
               <input type="text" class="form-control inputNome" placeholder="nome" >
 
@@ -106,7 +106,7 @@
                 <input type="email" class="form-control inputEmail" placeholder="seu melhor email"
                   aria-label="seu melhor email" aria-describedby="inscrever">
                 <div class="input-group-append">
-                  <button class="btn btn-outline-secondary inputButton" type="button" id="inscrever"><i
+                  <button class="btn btn-outline-secondary inputButton" type="submit" id="inscrever"><i
                       class="fas fa-arrow-right"></i></button>
                 </div>
               </div>
@@ -149,7 +149,7 @@
   </section>
   <section id="visitantes">
     <div class="visitantes">
-      <span class="acessos"></span> Acessos na página
+      <span class="cadastros"></span> Cadastros na página
     </div>
   </section>
   <section id="conteudo-page">
