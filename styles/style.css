@@ -140,3 +140,20 @@ header {
 .jumbotron {
     height: 90vh;
 }
+.conteudo-page_div{
+    background: #1f1f44;
+    padding-bottom: 6%;
+}
+.conteudo-page_title{
+    padding-top: 6%;
+    padding-bottom: 6%
+}
+.card{
+    background-color: #1f1f44;
+}
+.botao-participar{
+    border-radius: 45px;
+    border: solid 2px #e61b72;
+    padding: 1% 4%;
+    margin-top: 8%;
+}
