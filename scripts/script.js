@@ -42,6 +42,10 @@ class CountDown{
         set('.evento-horas', formatted(this.event.getHours()))
         set('.evento-minutos', formatted(this.event.getMinutes()))
 
+        this.countAcesses(res => {
+            set('.acessos', res.value)
+        })
+
         this.updateView()
 
         setInterval(() => {
@@ -54,6 +58,12 @@ class CountDown{
         set('.count-horas', this.getDifference().hours)
         set('.count-minutos', this.getDifference().minutes)
         set('.count-segundos', this.getDifference().seconds)
+    }
+
+    countAcesses(action){
+        $.getJSON("https://api.countapi.xyz/hit/lifeoneline.com.br/visits", function(response) {
+            action(response)
+        });
     }
 
     convertMillisecs(mili){
