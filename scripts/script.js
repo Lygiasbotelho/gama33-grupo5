@@ -89,10 +89,11 @@ class Email{
         const form = document.querySelector(query)
         const name = form.querySelector('[name=name]')
         const email = form.querySelector('[name=email]')
+        const countUrl = 'https://api.countapi.xyz/hit/lifeoneline.com.br/cadastros'
 
         const counterUp = () => $.ajax({
             type: 'POST',
-            url: url,
+            url: countUrl,
             data: form.serialize(), // serializes the form's elements.  
             dataType: "jsonp",
             success: function(data)
@@ -101,7 +102,9 @@ class Email{
             }
         })
 
-        form.onsubmit = () => {
+        $(query).submit
+
+        form.onsubmit = (e) => {
             e.preventDefault()
 
             $.ajax({
