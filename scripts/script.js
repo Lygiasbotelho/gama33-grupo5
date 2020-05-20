@@ -117,7 +117,6 @@ class Email{
                 success: function(data)
                 {    
                    counterUp()
-                   
                 }
             });
         }
@@ -149,7 +148,6 @@ class Popup{
 
     window.data = dataEvento
 
-    console.log(eventOn)
     if(eventOn){
         elseEvent.hide()
     }else{
