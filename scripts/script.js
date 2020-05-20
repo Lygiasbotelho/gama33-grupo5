@@ -140,7 +140,8 @@ class Popup{
 (function Main(){
     const dataEvento = new CountDown(2020,4,18)
     const popUp = new Popup('#popup')
-    const email = new Email('#emailForm')
+    const email1 = new Email('#emailForm')
+    const email2 = new Email('#formFooter')
     const eventOn = dataEvento.seconds > 0
     const ifEvent = $('.if-event')
     const elseEvent = $('.else-event')
