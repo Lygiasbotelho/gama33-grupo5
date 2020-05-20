@@ -22,10 +22,13 @@ header {
     width: 100%;
     height: auto;
     min-height: 75%;
-    background-image: linear-gradient(to right, #d60b51, #a81fba);
-    background-size: contain;
-    padding: 10px 15% 50px 15%;
+    /*background-image: linear-gradient(to right, #d60b51, #a81fba);*/
+    background-image: url("../img/BG-TOPO.jpg");
+    background-size: cover;
+    background-position: center;
+   /* padding: 10px 15% 50px 15%;*/
 }
+
 .conteudo{
     box-sizing: border-box;
     width: 80%;
@@ -56,14 +59,14 @@ header {
 
 .menuItem a:hover {
     /*background-color: #F6CEEC;*/
-    color: #F6CEE3;
+    color: #FFF;
     box-shadow: 4px 6px 0 0 #751682;
 }
 .botaoNav{
     padding: 2px 30px;
     margin-left: 50px;
     height: 40px;
-    border-radius: 45px;
+    border-radius: 35px;
     box-shadow: 4px 6px 0 0 #751682;
     background-color: #e61b72;
     border: none;
@@ -85,13 +88,27 @@ header {
     margin-bottom: 30px;/*border: 1px solid yellow;*/
 }
 .headerTitle h5{
+    margin-top: 40px;
     margin-bottom: 40px;/*border: 1px solid yellow;*/
-}
+}/*
 .headerTitle p{
     font-size: 16px;
+}*/
+.txt1{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.txt2{
+    font-size: 18px;
+}
+.txt3{
+    font-size: 14px;
+    padding-left: 10px;
+    margin-bottom: 0;
 }
 .headerForm {/*border: 1px solid yellow;*/
    margin-left: -10px;
+   padding-bottom: 20px;
 }
 
 .headerForm input{
@@ -102,26 +119,33 @@ header {
 }
 
 .headerForm .inputNome{
-    width: 200px;
+    width: 220px;
 }
 .headerForm .inputEmail{
-    width: 280px;
-    max-width: 80%;
-    margin-top:15px;
+    margin-top: 17px;
+    width: 335px;
     border-radius: 4px;
 }
 
 @media screen and (max-width: 600px) {
+    .header{
+       box-sizing: border-box;
+    }
     .headerForm .inputNome{
         width: 95%;
     }
     .headerForm .inputEmail{
         width: 75%;
     }
-    
+   
+    .formFazerParte .cartao{
+        width: 100%;
+        margin:0;
+        padding:0;
+    }
   }
 .headerForm .inputButton{
-    margin-top: 15px;
+    margin-top: 17px;
     margin-left: -10px;
     border: none;
     height: 40px;
@@ -152,10 +176,7 @@ header {
     text-align: right;
     padding-right: 50px;
 }
-/**/
-.jumbotron {
-    height: 90vh;
-}
+
 .fundoRoxo{
     background: #1f1f44;
     padding-bottom: 20px;
@@ -171,31 +192,24 @@ header {
    /* border: solid 2px green;*/
 }
 
-.colchete{
-    /*border: solid 2px #e61b72;*/
+.sobre_title span{
+    margin: 0;
+    padding: 0;
+}
+colchete{
     background: linear-gradient(to top, #a81fba, #d60b51);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 45px;
-    margin-top: 50px;
-}/*
-.sobre_title .title{
-    
-    margin-bottom: 80px;/*border: solid 2px #e61b72;*
-}*/
-
+}
 
 .cartao{
     box-sizing: border-box;
     width:100%;
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);/*#FDFDFD 2px 2px 10px;*/
-  /*  border-radius: 20px;*/
     margin-right: 0;
-   /* padding-right:0; /*border: 1px solid green;*/
     border: none;
     padding: 30px 0 20px;
     text-align: center;
-  /*  border: 1px solid red;*/
 }
 
 .cartao h5{
@@ -209,7 +223,7 @@ header {
 }
 
 .cartao i{
-    font-size: 30px;
+    font-size: 40px;
     background: linear-gradient(to top, #a81fba, #d60b51);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -223,7 +237,7 @@ header {
     border: solid 2px #e61b72;
     color: #e61b72;
     padding: 1% 4%;
-    margin-top: 70px;
+    margin-top: 30px;
     background-color: transparent;
 }
 .btnSobreParticipar:hover{
@@ -249,30 +263,46 @@ header {
 .participantes .cartao{
     border: 1px solid red;
 }*/
+.participantes{
+    padding-bottom: 70px;
+}
 .participantes .cartao{
-    width: 90%;
+   margin-bottom: 0;
 }
 .participantes img{
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .participantes p{
     font-size: 14px;
     font-style: italic;
 }
+.formFazerParte{
+    background-image: url("../img/BG-FORM.jpg");
+    background-size: cover;
+    background-position: center;
+}
 .formFazerParte .cartao{
-    width: 350px;
-    max-width: 100%;
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
     margin-top: 50px;
+    padding-bottom: 0;
     border-radius: 8px;
     box-shadow: 4px 6px 0 0 #751682;
     background-color: #e61b72;
     border: none;
     color: #fff;
-    margin: 50px 0 10px;
+    /*margin: 50px 0 10px;*/
 }
 
 .formFazerParte input{
     margin-bottom: 10px;
+}
+
+.formFazerParte p{
+    font-size: 12px;
 }
 
 .btnFazerParte{
@@ -287,5 +317,28 @@ header {
 .btnFazerParte:hover{
     background-color: #F6CEE3;
     color: #A901DB;
+    font-weight: bold;
+}
+.redesSociais{
+    margin: 50px 0 20px;
+    text-align: center;
+}
+.formFazerParte img{
+    padding: 5px;
+    width: 40px;
+}
+.fundoModal{
+    background-color: #E6E6E6;
+}
+.modal{
+   color: #424242;
+}
+.modal .btn{
+    margin-top: 20px;
+    border: 1px solid #D70B52;
+}
+.modal .btn:hover, .btn:active{
+    background-color: #D70B52;
+    color: #fff;
     font-weight: bold;
 }
