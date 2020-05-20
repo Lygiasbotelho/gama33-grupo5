@@ -35,7 +35,8 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Modal -->
-  <div class="modal" id="popup" tabindex="-1" role="dialog">
+  <!--<div class="modal" id="popup" tabindex="-1" role="dialog">-->
+  <div class="modal" id="" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -56,9 +57,10 @@
   </div>
 
   <header>
-    <div class="container-fluid">
+    <div class="container">
+      <div class="conteudo">
 
-      <nav class="navbar navbar-expand-lg navbar-dar'k menu">
+      <nav class="navbar navbar-expand-lg menu">
         <div class="container-fluid container-fluid-max">
           <a class="navbar-brand" href="#home"><img id="logo" src="img/logo_oneline.svg"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -72,13 +74,13 @@
                 <a class="nav-link" href="#sobre">SOBRE O EVENTO</a>
               </li>
               <li class="nav-item menuItem">
-                <a class="nav-link" href="#">QUEM PARTICIPA</a>
+                <a class="nav-link" href="#participantes">QUEM PARTICIPARA</a>
               </li>
               <li class="nav-item menuItem">
-                <a class="nav-link" href="#">APOIO</a>
+                <a class="nav-link" href="#apoio">APOIO</a>
               </li>
 
-              <input class="botaoNav" type="button" value="PARTICIPE">
+              <input class="botaoNav" type="button" value="INSCREVA-SE" onclick="rolar_para('#fazerParte')">
 
           </div>
         </div>
@@ -86,25 +88,34 @@
 
 
       <div class="row">
-        <div class="col-md-6 headerTitle">
-          <h3><em>ENFRENTA</em> <strong>BRASIL!</strong></h3>
+        <div class="col-md-7 headerTitle">
+          <p class="txt1">webinar</p>
+          <h1><em>ENFRENTA</em> <strong>BRASIL!</strong></h1>
 
-          <p>O maior evento de enfrentamento a pandemia do Brasil. <br>
-            Totalmente <strong>online</strong> e <strong>100% gratuito.</strong></p>
+          <p class="txt2">Conquiste seu novo emprego durante a quarentena</p>
+          <p>O maior evento do Brasil para conseguir um novo emprego durante a pandemia, totalmente
+            <strong>online</strong> e <strong>100% gratuito</strong>. </p>
+          <!--
+            Webinar <strong>
+            gratuito</strong> e <strong>online</strong> para quem está buscando dicas, conteúdo e
+            mentoria para novas conquistas durante o isolamento social.</p>-->
 
-          <h5><strong>Quarta-feira, dia 20/05, às 19h!</strong></h5>
-
-          <p>Venha enfrentar de cabeça erguida a crise junto com a gente! Garanta já a sua inscrição.</p>
+          <h5><strong>Quinta-feira, dia 21/05, às 15h!</strong></h5>
         </div>
         <div class="col"></div>
       </div>
 
 
       <div class="row">
-        <div class="col-md-8 headerForm">
-          <form class="form-inline" id="emailForm" method="POST" action="https://api.countapi.xyz/hit/lifeoneline.com.br/cadastros">
+        <div class="col-md-10 headerForm">
+
+
+          <p class="txt3">Venha enfrentar de cabeça erguida a crise junto com a gente! Garanta já a sua inscrição
+            <strong>gratuita</strong>.</p>
+          <form class="form-inline" id="emailForm" method="POST"
+            action="https://api.countapi.xyz/hit/lifeoneline.com.br/cadastros">
             <div class="form-group">
-              <input name="name" type="text" class="form-control inputNome" placeholder="nome" >
+              <input name="name" type="text" class="form-control inputNome" placeholder="nome">
               <div class="input-group mb-3">
                 <input name="email" type="email" class="form-control inputEmail" placeholder="seu melhor email"
                   aria-label="seu melhor email" aria-describedby="inscrever">
@@ -118,6 +129,7 @@
         </div>
       </div>
     </div>
+  </div>
   </header>
 
 
@@ -151,20 +163,22 @@
 
   </section>
 
+  <!--
   <section id="visitantes">
     <div class="visitantes">
       <span class="cadastros"></span> Cadastros na página
     </div>
-  </section>
+  </section>-->
 
   <section id="sobre">
-
     <div class="container-fluid fundoRoxo sobreEvento">
       <div class="conteudo">
-        <div class="row ">
+        <div class="row">
           <div class="col sobre_title">
             <!--class="sobre_title d-flex justify-content-center h-50-->
-            <span class="colchete"> [ </span> <span class="title">SOBRE O EVENTO </span><span class="colchete"> ]
+            <span>
+              <colchete>[</colchete> SOBRE O EVENTO <colchete>]</colchete>
+            </span>
             </span>
           </div>
         </div>
@@ -173,33 +187,33 @@
           <div class="col-md-4">
 
             <div class="card cartao">
-              <div class="card-img-top"><i class="fas fa-laptop"></i></div>
+              <div class="card-img-top"><i class="fas fa-video"></i></div>
               <div class="card-body">
-                <h5>ESPECIALISTAS</h5>
-                <p class="card-text">Atividades únicas que podemos fazer juntos, oferecidas por anfitriões
-                  de todo o mundo.</p>
+                <h5>DICAS PARA ENTREVISTAS ONLINE</h5>
+                <p class="card-text">Com os maiores especialistas e recrutadores do mercado te ajudando a conseguir o
+                  emprego dos seus sonhos!</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
 
             <div class="card cartao">
-              <div class="card-img-top"><i class="fas fa-laptop"></i></div>
+              <div class="card-img-top"><i class="fas fa-briefcase"></i></div>
               <div class="card-body">
-                <h5>VAGAS DE EMPREGO</h5>
-                <p class="card-text">Atividades únicas que podemos fazer juntos, oferecidas por anfitriões
-                  de todo o mundo.</p>
+                <h5>PAINEL DE VAGAS</h5>
+                <p class="card-text"><br>Fechamos parcerias com diversas empresas do mercado que estão contratando,
+                  todas disponíveis para você já aplicar as dicas e enviar o seu currículo.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
 
             <div class="card cartao">
-              <div class="card-img-top"><i class="fas fa-laptop"></i></div>
+              <div class="card-img-top"><i class="fab fa-linkedin-in"></i></div>
               <div class="card-body">
-                <h5>EVENTOS EXCLUSIVOS</h5>
-                <p class="card-text">Atividades únicas que podemos fazer juntos, oferecidas por anfitriões
-                  de todo o mundo.</p>
+                <h5>O PODER DO LINKEDIN</h5>
+                <p class="card-text"><br>Como essa rede social pode te ajudar a encontrar vagas, mandar currículos e
+                  criar conexões com as empresas que você almeja.</p>
               </div>
             </div>
           </div>
@@ -207,63 +221,46 @@
 
         <div class="row d-flex justify-content-center">
 
-          <input class="btnSobreParticipar" type="button" value="PARTICIPAR">
+          <input class="btnSobreParticipar" type="button" value="INSCREVA-SE GRATUITAMENTE" onclick="rolar_para('#fazerParte')">
         </div>
       </div>
     </div>
   </section>
 
   <section id="participantes">
-
     <div class="container-fluid fundoRoxo participantes">
       <div class="conteudo">
         <div class="row ">
           <div class="col sobre_title">
             <!--class="sobre_title d-flex justify-content-center h-50-->
-            <span class="colchete"> [ </span> <span class="title">QUEM PARTICIPARÁ </span><span class="colchete"> ]
+            <span>
+              <colchete>[</colchete> COM QUEM <colchete>]</colchete>
             </span>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-md-center">
           <div class="col-md-4">
 
             <div class="card cartao">
-              <img class="card-img-top" src="./img/LAINE-GUIMARAES.jpg" alt="Card image cap">
+              <img class="card-img-top" src="./img/LAINE-GUIMARAES_2.jpg" alt="Card image cap">
               <div class="card-body">
 
-                <p class="card-text">Atividades únicas que podemos fazer juntos, oferecidas por anfitriões
-                  de todo o mundo.</p>
+                <p class="card-text">Formada em Administração, consultora DISC,
+                  especialista em LinkedIn, atua como Jobhunter e Headhunter.
+                  Ama trabalhar com pessoas e mostrar a elas o quanto o mercado tem a oferecer.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
 
-            <div class="card cartao">
-              <img class="card-img-top" src="./img/LAINE-GUIMARAES.jpg" alt="Card image cap">
-              <div class="card-body">
+        </div>
+        <div class="row d-flex justify-content-center">
 
-                <p class="card-text">Atividades únicas que podemos fazer juntos, oferecidas por anfitriões
-                  de todo o mundo.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-
-            <div class="card cartao">
-              <img class="card-img-top" src="./img/LAINE-GUIMARAES.jpg" alt="Card image cap">
-              <div class="card-body">
-
-                <p class="card-text">Atividades únicas que podemos fazer juntos, oferecidas por anfitriões
-                  de todo o mundo.</p>
-              </div>
-            </div>
-          </div>
+          <input class="btnSobreParticipar" type="button" value="INSCREVA-SE GRATUITAMENTE" onclick="rolar_para('#fazerParte')">
         </div>
       </div>
     </div>
   </section>
-
 
   <section id="apoio">
     <div class="container-fluid apoiadores">
@@ -277,44 +274,45 @@
 
   <section id="fazerParte">
     <div class="container-fluid fundoRoxo formFazerParte">
-      <div class="conteudo">
+      <div class="row justify-content-md-center">
+        <div class="col-md-4">
+          <div class="card cartao">
+            <div class="card-body">
+              <h5>Quero me inscrever!</h5>
 
-        <div class="row justify-content-center">
-          <div class="col-md-5">
+              <form class="form">
+                <div class="form-group">
+                  <input type="text" class="form-control inputNome2" placeholder="nome">
 
-            <div class="card cartao">
-              <div class="card-body">
-                <h5>Quero fazer parte!</h5>
-
-                <form class="form">
-                  <div class="form-group">
-                    <input type="text" class="form-control inputNome2" placeholder="nome">
-
-                    <div class="input-group mb-3">
-                      <input type="email" class="form-control inputEmail2" placeholder="seu melhor email"
-                        aria-label="seu melhor email" aria-describedby="inscrever">
-                    </div>
-                    <div class="row d-flex justify-content-center">
-
+                  <div class="input-group mb-3">
+                    <input type="email" class="form-control inputEmail2" placeholder="seu melhor email"
+                      aria-label="seu melhor email" aria-describedby="inscrever">
+                  </div>
+                  <div class="row d-flex justify-content-md-center">
+                    <div class="col">
                       <input class="btnFazerParte" type="button" value="PARTICIPAR">
                     </div>
                   </div>
-                </form>
+                </div>
+              </form>
 
-                <p class="card-text">Atividades únicas que podemos fazer juntos, oferecidas por anfitriões
-                  de todo o mundo.</p>
-              </div>
+              <p class="card-text">Prometemos não utilizar suas informações de contato para enviar qualquer tipo de
+                SPAM.</p>
             </div>
           </div>
-
         </div>
 
-        <div class="row justify-content-center">
-          <div class="col-md-5">
+      </div>
 
-          </div>
+      <div class="row justify-content-md-center">
+        <div class="col redesSociais">
+          <a href="#"><img alt="Linkedin" src="./img/linkedin.svg"></a>
+          <a href="#"><img alt="Instagram" src="./img/instagram.svg"></a>
+          <a href="#"><img alt="Facebook" src="./img/fb.svg"></a>
+          <a href="#"><img alt="Compartilhar" src="./img/share.svg"></a>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -328,6 +326,14 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+
+  <script>
+    function rolar_para(elemento) {
+      $('html, body').animate({
+        scrollTop: $(elemento).offset().top
+      }, 500);
+    }
+  </script>
 
   <script src="scripts/script.js"></script>
 
