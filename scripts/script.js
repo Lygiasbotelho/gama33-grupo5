@@ -135,7 +135,7 @@ class Popup{
             }
         }
 
-        setTimeout(() => popup(),1500)
+        setTimeout(() => popup(),150000)
 
         $(document).mouseleave(function () {
             popup()
