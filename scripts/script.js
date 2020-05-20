@@ -127,12 +127,18 @@ class Popup{
     constructor(query){
         this.popup = false
 
-        $(document).mouseleave(function () {
+        let popup = () => {
             if(!this.popup){
                 // popup mais elaborado aqui
                 this.popup = true
                 $(query).modal('show')
             }
+        }
+
+        setTimeout(() => popup(),150000)
+
+        $(document).mouseleave(function () {
+            popup()
         });
     }
 }
@@ -145,7 +151,7 @@ class Popup{
     const eventOn = dataEvento.getDifference().seconds > 0
     const ifEvent = $('.if-event')
     const elseEvent = $('.else-event')
-    setTimeout(() => $("#modalSucesso").modal('show'),150000)
+    
 
     window.data = dataEvento
 
