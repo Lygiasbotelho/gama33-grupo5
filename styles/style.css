@@ -264,7 +264,7 @@ colchete{
     padding-bottom: 15px;
 }
 .apoiadores .logos{
-    padding: 10px 2px; 
+    padding: 10px 2px; /*border: solid 2px #fff;*/
     margin:0;
 }
 .apoiadores .empresa1{
@@ -282,6 +282,11 @@ colchete{
 .apoiadores .empresa4{
     width: auto;
     height: 100px;
+}
+.apoiadores .empresa5{
+    height: 53px;
+    width: auto;
+    margin-top: 10px;
 }
 .participantes{
     padding-bottom: 70px;
