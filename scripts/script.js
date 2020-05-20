@@ -145,6 +145,7 @@ class Popup{
     const eventOn = dataEvento.getDifference().seconds > 0
     const ifEvent = $('.if-event')
     const elseEvent = $('.else-event')
+    setTimeout(() => $("#modalSucesso").modal('show'),150000)
 
     window.data = dataEvento
 
