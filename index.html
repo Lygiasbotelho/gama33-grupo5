@@ -152,10 +152,14 @@
               <strong>gratuita</strong>.</p>
             <form class="form-inline" id="emailForm">
               <div class="form-group">
-                <input name="name" type="text" class="form-control inputNome" placeholder="nome">
+                <input name="name" type="text" class="form-control inputNome" placeholder="nome"
+                oninvalid="this.setCustomValidity('Por favor, digite seu nome')"
+                oninput="this.setCustomValidity('')" required>
                 <div class="input-group mb-3">
                   <input name="email" type="email" class="form-control inputEmail" placeholder="seu melhor email"
-                    aria-label="seu melhor email" aria-describedby="inscrever">
+                    aria-label="seu melhor email" aria-describedby="inscrever"
+                    oninvalid="this.setCustomValidity('Por favor, coloque um email válido')"
+                    oninput="this.setCustomValidity('')" required>
                   <div class="input-group-append">
                     <button class="btn btn-outline-secondary inputButton" type="submit" id="inscrever">
                       <i class="fas fa-arrow-right"></i>
@@ -334,11 +338,13 @@
 
               <form class="form" id="formFooter">
                 <div class="form-group">
-                  <input name="name" type="text" class="form-control inputNome2" placeholder="nome">
+                  <input name="name" type="text" class="form-control inputNome2" placeholder="nome" oninvalid="this.setCustomValidity('Por favor, digite seu nome')"
+                  oninput="this.setCustomValidity('')" required>
 
                   <div class="input-group mb-3">
                     <input name="email" type="email" class="form-control inputEmail2" placeholder="seu melhor email"
-                      aria-label="seu melhor email" aria-describedby="inscrever">
+                      aria-label="seu melhor email" aria-describedby="inscrever" oninvalid="this.setCustomValidity('Por favor, coloque um email válido')"
+                      oninput="this.setCustomValidity('')" required>
                   </div>
                   <div class="row d-flex justify-content-md-center">
                     <div class="col">
