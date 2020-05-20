@@ -52,10 +52,10 @@ class CountDown {
     }
 
     updateView() {
-        set('.count-dias', `${this.getDifference().days}`)
-        set('.count-horas', `: ${this.getDifference().hours}`)
-        set('.count-minutos', `: ${this.getDifference().minutes}`)
-        set('.count-segundos', `: ${this.getDifference().seconds}`)
+        set('.count-dias', ` ${this.getDifference().days}`)
+        set('.count-horas', ` : ${this.getDifference().hours} `)
+        set('.count-minutos', ` : ${this.getDifference().minutes} `)
+        set('.count-segundos', ` : ${this.getDifference().seconds} `)
     }
 
     async getCadastros(){
