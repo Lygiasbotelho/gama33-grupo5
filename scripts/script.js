@@ -87,6 +87,7 @@ class Email{
         const name = form.querySelector('[name=name]')
         const email = form.querySelector('[name=email]')
         const countUrl = 'https://api.countapi.xyz/hit/lifeoneline.com.br/cadastros'
+        const mailUrl = 'https://lifeoneline.us18.list-manage.com/subscribe/post'
 
         const counterUp = () => $.ajax({
             type: 'POST',
@@ -98,14 +99,12 @@ class Email{
                alert(data); // show response from the php script.
             }
         })
-
-        $(query).submit
-
+        
         form.onsubmit = (e) => {
             e.preventDefault()
 
             $.ajax({
-                url: '',
+                url: mailUrl,
                 method: 'POST',
                 data: {
                     u: '67dbf3aef57c87307dc7a7ae1', 
@@ -152,41 +151,5 @@ class Popup{
     }else{
         ifEvent.hide()
     }
-
-    //dataEvento.setTimeView()
-
-    $('#emailForm').submit(function(e){
-        e.preventDefault()
-        var form = $(this)
-        var url = form.attr('action')
-
-        var name = $('#formName').val()
-        var email = $('#formEmail').val()
-
-        console.log(name, email)
-
-        const counterUp = () => $.ajax({
-            type: 'POST',
-            url: url,
-            data: form.serialize(), // serializes the form's elements.  
-            dataType: "jsonp",
-
-            success: function(data)
-            {    
-               alert(data); // show response from the php script.
-            }
-        })
-
-        $.ajax({
-            url: '',
-            method: 'POST',
-            data: {u: '', id: '', EMAIL: email, NAME: name},
-            dataType: 'jsonp',
-            success: function(data)
-            {    
-               alert('tudo ok'); // show response from the php script.
-            }
-        });
-    })
 })()
 
