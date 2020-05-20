@@ -24,7 +24,7 @@ class CountDown {
         const seconds = rounded(diff.seconds, 60)
         const minutes = rounded(diff.minutes, 60)
         const hours = rounded(diff.hours, 24)
-        const days = Math.round(diff.days)
+        const days = Math.floor(diff.days)
 
         return {
             seconds,
@@ -135,7 +135,7 @@ class Popup{
             }
         }
 
-        setTimeout(() => popup(),150000)
+        setTimeout(() => popup(),1500)
 
         $(document).mouseleave(function () {
             popup()
