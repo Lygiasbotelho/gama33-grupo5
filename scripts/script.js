@@ -56,6 +56,18 @@ class CountDown {
         set('.count-horas', ` : ${this.getDifference().hours} `)
         set('.count-minutos', ` : ${this.getDifference().minutes} `)
         set('.count-segundos', ` : ${this.getDifference().seconds} `)
+
+        const ifEvent = $('.if-event')
+        const elseEvent = $('.else-event')
+        const eventOn = this.getDifference().seconds > 0
+
+        if(eventOn){
+            elseEvent.hide()
+            ifEvent.show()
+        }else{
+            ifEvent.hide()
+            elseEvent.show()
+        }
     }
 
     async getCadastros(){
@@ -144,21 +156,9 @@ class Popup{
 }
 
 (function Main(){
-    const dataEvento = new CountDown(2020,4,21,15,0,0)
+    const dataEvento = new CountDown(2020,4,21,18,0,0)
     const popUp = new Popup('#popup')
     const email1 = new Email('#emailForm')
     const email2 = new Email('#formFooter')
-    const eventOn = dataEvento.getDifference().seconds > 0
-    const ifEvent = $('.if-event')
-    const elseEvent = $('.else-event')
-    
-
-    window.data = dataEvento
-
-    if(eventOn){
-        elseEvent.hide()
-    }else{
-        ifEvent.hide()
-    }
 })()
 
