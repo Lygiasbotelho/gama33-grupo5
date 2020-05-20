@@ -139,24 +139,22 @@
           </div>
           <div class="col"></div>
         </div>
-
-
         <div class="row">
           <div class="col-md-10 headerForm">
 
 
             <p class="txt3">Venha enfrentar de cabeça erguida a crise junto com a gente! Garanta já a sua inscrição
               <strong>gratuita</strong>.</p>
-            <form class="form-inline" id="emailForm" method="POST"
-              action="https://api.countapi.xyz/hit/lifeoneline.com.br/cadastros">
+            <form class="form-inline" id="emailForm">
               <div class="form-group">
                 <input name="name" type="text" class="form-control inputNome" placeholder="nome">
                 <div class="input-group mb-3">
                   <input name="email" type="email" class="form-control inputEmail" placeholder="seu melhor email"
                     aria-label="seu melhor email" aria-describedby="inscrever">
                   <div class="input-group-append">
-                    <button class="btn btn-outline-secondary inputButton" type="submit" id="inscrever"
-                      data-toggle="modal" data-target="#modalSucesso"><i class="fas fa-arrow-right"></i></button>
+                    <button class="btn btn-outline-secondary inputButton" type="submit" id="inscrever">
+                      <i class="fas fa-arrow-right"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -329,18 +327,17 @@
             <div class="card-body">
               <h5>Quero me inscrever!</h5>
 
-              <form class="form">
+              <form class="form" id="formFooter">
                 <div class="form-group">
-                  <input type="text" class="form-control inputNome2" placeholder="nome">
+                  <input name="name" type="text" class="form-control inputNome2" placeholder="nome">
 
                   <div class="input-group mb-3">
-                    <input type="email" class="form-control inputEmail2" placeholder="seu melhor email"
+                    <input name="email" type="email" class="form-control inputEmail2" placeholder="seu melhor email"
                       aria-label="seu melhor email" aria-describedby="inscrever">
                   </div>
                   <div class="row d-flex justify-content-md-center">
                     <div class="col">
-                      <input class="btnFazerParte" type="button" value="PARTICIPAR" data-toggle="modal"
-                        data-target="#modalSucesso">
+                      <input class="btnFazerParte" type="submit" value="PARTICIPAR">
                     </div>
                   </div>
                 </div>

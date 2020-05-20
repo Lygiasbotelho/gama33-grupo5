@@ -86,10 +86,12 @@ class Email{
         const form = document.querySelector(query)
         const name = form.querySelector('[name=name]')
         const email = form.querySelector('[name=email]')
+        const countUrl = 'https://api.countapi.xyz/hit/lifeoneline.com.br/cadastros'
+        const mailUrl = 'https://lifeoneline.us18.list-manage.com/subscribe/post'
 
         const counterUp = () => $.ajax({
             type: 'POST',
-            url: url,
+            url: countUrl,
             data: form.serialize(), // serializes the form's elements.  
             dataType: "jsonp",
             success: function(data)
@@ -97,12 +99,13 @@ class Email{
                alert(data); // show response from the php script.
             }
         })
-
-        form.onsubmit = () => {
+        
+        form.onsubmit = (e) => {
             e.preventDefault()
+            $("#modalSucesso").modal('show')
 
             $.ajax({
-                url: '',
+                url: mailUrl,
                 method: 'POST',
                 data: {
                     u: '67dbf3aef57c87307dc7a7ae1', 
@@ -114,7 +117,7 @@ class Email{
                 success: function(data)
                 {    
                    counterUp()
-                   document.location.reload()
+                   
                 }
             });
         }
@@ -138,7 +141,8 @@ class Popup{
 (function Main(){
     const dataEvento = new CountDown(2020,4,18)
     const popUp = new Popup('#popup')
-    const email = new Email('#emailForm')
+    const email1 = new Email('#emailForm')
+    const email2 = new Email('#formFooter')
     const eventOn = dataEvento.seconds > 0
     const ifEvent = $('.if-event')
     const elseEvent = $('.else-event')
@@ -149,41 +153,5 @@ class Popup{
     }else{
         ifEvent.hide()
     }
-
-    //dataEvento.setTimeView()
-
-    $('#emailForm').submit(function(e){
-        e.preventDefault()
-        var form = $(this)
-        var url = form.attr('action')
-
-        var name = $('#formName').val()
-        var email = $('#formEmail').val()
-
-        console.log(name, email)
-
-        const counterUp = () => $.ajax({
-            type: 'POST',
-            url: url,
-            data: form.serialize(), // serializes the form's elements.  
-            dataType: "jsonp",
-
-            success: function(data)
-            {    
-               alert(data); // show response from the php script.
-            }
-        })
-
-        $.ajax({
-            url: '',
-            method: 'POST',
-            data: {u: '', id: '', EMAIL: email, NAME: name},
-            dataType: 'jsonp',
-            success: function(data)
-            {    
-               alert('tudo ok'); // show response from the php script.
-            }
-        });
-    })
 })()
 
