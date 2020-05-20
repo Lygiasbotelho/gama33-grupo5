@@ -102,6 +102,7 @@ class Email{
         
         form.onsubmit = (e) => {
             e.preventDefault()
+            $("#modalSucesso").modal('show')
 
             $.ajax({
                 url: mailUrl,
@@ -116,7 +117,7 @@ class Email{
                 success: function(data)
                 {    
                    counterUp()
-                   document.location.reload()
+                   
                 }
             });
         }
