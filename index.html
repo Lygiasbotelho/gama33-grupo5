@@ -67,18 +67,21 @@
     <div class="modal-dialog modal-frame modal-top modal-notify modal-success" role="document">
       <!--Content-->
       <div class="modal-content ">
+
         <!--Body-->
         <div class="modal-body fundoModal">
           <div class="row d-flex justify-content-center align-items-center">
 
-            <h2>
+            <h4 class="modal-title">
               <span class="badge">Cadastro realizado com sucesso!</span>
-            </h2>
+
+            </h4>
             <p class="pt-3 mx-5">Encaminhamos para você um email de confirmação.<br>
             </p>
 
             <a type="button" class="btn waves-effec" data-dismiss="modal">
               Ok, obrigado</a>
+
           </div>
         </div>
       </div>
@@ -299,10 +302,22 @@
   <section id="apoio">
     <div class="container-fluid apoiadores">
       <div class="conteudo">
-        <h6>APOIO</h6>
-        <img src="./img/logo_oneline.svg">
+        <h5>APOIADORES</h5>
+        <div class="row justify-content-md-center">
+          <div class="col-md-2 logos">
+            <img class="empresas" src="./img/logo_oneline.svg">
+          </div>
+          <div class="col-md-2 logos">
+            <img class="empresas" src="./img/Hacking Growth Logo Nova_Branca.png">
+          </div>
+          <div class="col-md-2 logos">
+            <img class="empresas2" src="./img/yeahp-white.png">
+          </div>
 
+        </div>
       </div>
+
+    </div>
     </div>
   </section>
 
@@ -324,7 +339,8 @@
                   </div>
                   <div class="row d-flex justify-content-md-center">
                     <div class="col">
-                      <input class="btnFazerParte" type="button" value="PARTICIPAR">
+                      <input class="btnFazerParte" type="button" value="PARTICIPAR" data-toggle="modal"
+                        data-target="#modalSucesso">
                     </div>
                   </div>
                 </div>
@@ -340,10 +356,13 @@
 
       <div class="row justify-content-md-center">
         <div class="col redesSociais">
-          <a href="#"><img alt="Linkedin" src="./img/linkedin.svg"></a>
-          <a href="#"><img alt="Instagram" src="./img/instagram.svg"></a>
-          <a href="#"><img alt="Facebook" src="./img/fb.svg"></a>
-          <a href="#"><img alt="Compartilhar" src="./img/share.svg"></a>
+          <a alt="Linkedin" href="https://www.linkedin.com/company/lifeonelinebr" target="_blank"><img alt="Linkedin"
+              src="./img/linkedin.svg"></a>
+          <a alt="Instagram" href="http://instagram.com/lifeonelinebr" target="_blank"><img alt="Instagram"
+              src="./img/instagram.svg"></a>
+          <a alt="Facebook" href="http://facebook.com/lifeonelinebr" target="_blank"><img alt="Facebook"
+              src="./img/fb.svg"></a>
+          <a alt="Compartilhar" href="#" target="_blank"><img alt="Compartilhar" src="./img/share.svg"></a>
         </div>
       </div>
 

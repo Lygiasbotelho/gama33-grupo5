@@ -143,6 +143,9 @@ header {
         margin:0;
         padding:0;
     }
+    .apoiadores .empresas2{
+        margin-top: 12px;
+    }
   }
 .headerForm .inputButton{
     margin-top: 17px;
@@ -202,7 +205,9 @@ colchete{
     -webkit-text-fill-color: transparent;
     font-size: 45px;
 }
-
+.sobreEvento .cartao{
+    margin-bottom: 50px;
+}
 .cartao{
     box-sizing: border-box;
     width:100%;
@@ -237,7 +242,6 @@ colchete{
     border: solid 2px #e61b72;
     color: #e61b72;
     padding: 1% 4%;
-    margin-top: 30px;
     background-color: transparent;
 }
 .btnSobreParticipar:hover{
@@ -249,20 +253,28 @@ colchete{
 }
 .apoiadores{
     background-color: #E61B72;
-    height: 150px;
-    display: flex;
+    height: 100%;
+    /*display: flex;*/
     align-items: center;
     text-align: center;
+    vertical-align: middle;
+    padding: 20px 0 40px;
 }
-.apoiadores img{
-    /*border: 5px solid #fff;
-    border-radius: 50%;*/
-    width: 100px;
-    margin: 10px 20px;
-}/*
-.participantes .cartao{
-    border: 1px solid red;
-}*/
+.apoiadores h5{
+    padding-bottom: 15px;
+}
+.apoiadores .logos{
+    padding: 10px;
+}
+.apoiadores .empresas{
+    width: auto;
+    height: 70px;
+    margin-top: 12px;
+}
+.apoiadores .empresas2{
+    width: auto;
+    height: 90px;
+}
 .participantes{
     padding-bottom: 70px;
 }
@@ -289,6 +301,7 @@ colchete{
     margin-right: 7%;
     margin-top: 50px;
     padding-bottom: 0;
+    padding-top: 0;
     border-radius: 8px;
     box-shadow: 4px 6px 0 0 #751682;
     background-color: #e61b72;
@@ -296,9 +309,12 @@ colchete{
     color: #fff;
     /*margin: 50px 0 10px;*/
 }
-
+.formFazerParte h5{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .formFazerParte input{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .formFazerParte p{
@@ -310,7 +326,7 @@ colchete{
     border: solid 2px #fff;
     color: #fff;
     padding: 5px 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: transparent;
     font-size: 14px;
 }
@@ -318,6 +334,7 @@ colchete{
     background-color: #F6CEE3;
     color: #A901DB;
     font-weight: bold;
+    border:solid 2px #F6CEE3;
 }
 .redesSociais{
     margin: 50px 0 20px;
@@ -332,9 +349,21 @@ colchete{
 }
 .modal{
    color: #424242;
+   text-align: center;
+}
+.modal .topo{
+    background-image: linear-gradient(to right, #d60b51, #a81fba);
+    
+}
+.modal-title .badge{
+   margin-left: auto;
+   margin-right: auto;
+   border-bottom: 3px solid #D70B52;
+   margin-bottom: 10px;
 }
 .modal .btn{
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     border: 1px solid #D70B52;
 }
 .modal .btn:hover, .btn:active{
