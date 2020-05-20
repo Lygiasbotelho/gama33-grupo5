@@ -24,7 +24,7 @@ class CountDown {
         const seconds = rounded(diff.seconds, 60)
         const minutes = rounded(diff.minutes, 60)
         const hours = rounded(diff.hours, 24)
-        const days = Math.round(diff.days)
+        const days = Math.floor(diff.days)
 
         return {
             seconds,
@@ -52,10 +52,26 @@ class CountDown {
     }
 
     updateView() {
+
         set('.count-dias', ` ${this.getDifference().days}&nbsp;:&nbsp;`)
         set('.count-horas', `${this.getDifference().hours}&nbsp;:&nbsp;`)
         set('.count-minutos', `${this.getDifference().minutes}&nbsp;:&nbsp;`)
         set('.count-segundos', `${this.getDifference().seconds}`)
+
+   
+
+        const ifEvent = $('.if-event')
+        const elseEvent = $('.else-event')
+        const eventOn = this.getDifference().seconds > 0
+
+        if(eventOn){
+            elseEvent.hide()
+            ifEvent.show()
+        }else{
+            ifEvent.hide()
+            elseEvent.show()
+        }
+
     }
 
     async getCadastros(){
@@ -117,7 +133,6 @@ class Email{
                 success: function(data)
                 {    
                    counterUp()
-                   
                 }
             });
         }
@@ -128,32 +143,26 @@ class Popup{
     constructor(query){
         this.popup = false
 
-        $(document).mouseleave(function () {
+        let popup = () => {
             if(!this.popup){
                 // popup mais elaborado aqui
                 this.popup = true
                 $(query).modal('show')
             }
+        }
+
+        setTimeout(() => popup(),150000)
+
+        $(document).mouseleave(function () {
+            popup()
         });
     }
 }
 
 (function Main(){
-    const dataEvento = new CountDown(2020,4,21,15,0,0)
+    const dataEvento = new CountDown(2020,4,21,18,0,0)
     const popUp = new Popup('#popup')
     const email1 = new Email('#emailForm')
     const email2 = new Email('#formFooter')
-    const eventOn = dataEvento.getDifference().seconds > 0
-    const ifEvent = $('.if-event')
-    const elseEvent = $('.else-event')
-
-    window.data = dataEvento
-
-    console.log(eventOn)
-    if(eventOn){
-        elseEvent.hide()
-    }else{
-        ifEvent.hide()
-    }
 })()
 
