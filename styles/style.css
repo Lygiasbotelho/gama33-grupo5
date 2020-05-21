@@ -411,5 +411,15 @@ colchete{
     padding: 20px;
     text-align: center;
     color: #848484;/*#F5A9D0;*/
-    font-size: 14px;
+    font-size: 20px;
+}
+.video a{
+    color: #D70B52;/*#F5A9D0;*/
+    font-size: 20px;
+}
+
+.video a:hover{
+    color: #fff;/*#F5A9D0;*/
+    font-size: 20px;
+    text-decoration: none;
 }
