@@ -70,7 +70,7 @@ class CountDown {
         }else{
             ifEvent.hide()
             elseEvent.show()
-            //window.location.href = './live.html'
+            toggle = false
         }
 
     }
@@ -120,7 +120,7 @@ class Email{
         form.onsubmit = (e) => {
             e.preventDefault()
             $("#modalSucesso").modal('show')
-
+            
             $.ajax({
                 url: mailUrl,
                 method: 'POST',
@@ -148,7 +148,9 @@ class Popup{
             if(!this.popup){
                 // popup mais elaborado aqui
                 this.popup = true
-                $(query).modal('show')
+                if(toggle){
+                    $(query).modal('show')
+                }
             }
         }
 
@@ -159,6 +161,8 @@ class Popup{
         });
     }
 }
+
+let toggle = true;
 
 (function Main(){
     const dataEvento = new CountDown(2020,4,21,15,0,0)

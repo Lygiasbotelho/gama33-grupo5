@@ -43,26 +43,215 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  <div class="modal fade top" id="popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true" data-backdrop="true">
+    <div class="modal-dialog modal-frame modal-top modal-notify modal-success" role="document">
+      <!--Content-->
+      <div class="modal-content ">
+        <!--Body-->
+        <div class="modal-body fundoModal">
+          <div class="row d-flex justify-content-center align-items-center">
+
+            <h2>
+              <span class="badge">Ei! Não saia sem se inscrever!</span>
+            </h2>
+            <p class="pt-3 mx-5">
+              O <em>Enfrenta Brasil</em> será único! 
+              <br>
+              Então não perca a oportunidade de virar a chave. 
+              <br>
+              <strong>Inscreva-se no formulário abaixo.</strong>
+            </p>
+
+            <a type="button" class="btn waves-effec" data-dismiss="modal">
+              Ok, obrigado</a>
+          </div>
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+
+  <!--Modal de Inscrição com Sucesso-->
+
+  <div class="modal fade top" id="modalSucesso" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true" data-backdrop="true">
+    <div class="modal-dialog modal-frame modal-top modal-notify modal-success" role="document">
+      <!--Content-->
+      <div class="modal-content ">
+
+        <!--Body-->
+        <div class="modal-body fundoModal">
+          <div class="row d-flex justify-content-center align-items-center">
+
+            <h4 class="modal-title">
+              <span class="badge">Cadastro realizado com sucesso!</span>
+
+            </h4>
+            <p class="pt-3 mx-5">Encaminhamos para você um email de confirmação.<br>
+            </p>
+
+            <a type="button" class="btn waves-effec" data-dismiss="modal">
+              Ok, obrigado</a>
+
+          </div>
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!---->
+
+
+<!-- ANTES -->
+<div class="if-event">
   <header>
     <div class="container">
       <div class="conteudo">
 
-        <!--
         <nav class="navbar navbar-expand-lg menu">
-          <div class="container-fluid container-fluid-max d-flex justify-content-center">
-            <a class="navbar-brand" href="#home"><img id="logo" src="img/logo_oneline.svg"></a>            
+          <div class="container-fluid container-fluid-max">
+            <a class="navbar-brand" href="#home"><img id="logo" src="img/logo_oneline.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item menuItem">
+                  <a class="nav-link" href="#sobre">SOBRE O EVENTO</a>
+                </li>
+                <li class="nav-item menuItem">
+                  <a class="nav-link" href="#participantes">QUEM PARTICIPARA</a>
+                </li>
+                <li class="nav-item menuItem">
+                  <a class="nav-link" href="#apoio">APOIO</a>
+                </li>
+
+                <input class="botaoNav" type="button" value="INSCREVA-SE" onclick="rolar_para('#fazerParte')">
+
+            </div>
           </div>
         </nav>
-        -->
 
         <div class="row">
-          <div class="col-md-12 headerTitle">
+          <div class="col-md-7 headerTitle">
+            <p class="txt1">webinar</p>
+            <h1><em>ENFRENTA</em> <strong>BRASIL!</strong></h1>
+
+            <p class="txt2">Conquiste seu novo emprego durante a quarentena</p>
+            <p>O maior evento do Brasil para conseguir um novo emprego durante a pandemia, totalmente
+              <strong>online</strong> e <strong>100% gratuito</strong>. </p>
+            <!--
+            Webinar <strong>
+            gratuito</strong> e <strong>online</strong> para quem está buscando dicas, conteúdo e
+            mentoria para novas conquistas durante o isolamento social.</p>-->
+
+            <h5><strong>Quinta-feira, dia 21/05, às 15h!</strong></h5>
+          </div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-10 headerForm">
+            <p class="txt3">Venha enfrentar de cabeça erguida a crise junto com a gente! Garanta já a sua inscrição
+              <strong>gratuita</strong>.</p>
+            <form class="form-inline" id="emailForm">
+              <div class="form-group">
+                <input name="name" type="text" class="form-control inputNome" placeholder="nome"
+                oninvalid="this.setCustomValidity('Por favor, digite seu nome')"
+                oninput="this.setCustomValidity('')" required>
+                <div class="input-group mb-3">
+                  <input name="email" type="email" class="form-control inputEmail" placeholder="seu melhor email"
+                    aria-label="seu melhor email" aria-describedby="inscrever"
+                    oninvalid="this.setCustomValidity('Por favor, coloque um email válido')"
+                    oninput="this.setCustomValidity('')" required>
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary inputButton" type="submit" id="inscrever">
+                      <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section id="contador">
+    <div class="contadores text-center d-flex align-items-center">
+      <div class="container">
+        <p class="lead">APROVEITE, O TEMPO ESTÁ ACABANDO ...</p>
+        <div class="d-flex justify-content-center">
+          <div>
+            <div class="display-6 count-dias"></div>
+            <p>dia</p>
+          </div>
+          <div>
+            <div class="display-6 count-horas"></div>
+            <p>horas</p>
+          </div>
+          <div>
+            <div class="display-6 count-minutos"></div>
+            <p>minutos</p>
+          </div>
+          <div>
+            <div class="display-6 count-segundos"></div>
+            <p>segundos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+<!-- DEPOIS -->
+<div class="else-event">
+  <header>
+    <div class="container">
+      <div class="conteudo">
+
+        <nav class="navbar navbar-expand-lg menu">
+          <div class="container-fluid container-fluid-max">
+            <a class="navbar-brand" href="#home"><img id="logo" src="img/logo_oneline.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item menuItem">
+                  <a class="nav-link" href="#sobre">SOBRE O EVENTO</a>
+                </li>
+                <li class="nav-item menuItem">
+                  <a class="nav-link" href="#participantes">QUEM PARTICIPARA</a>
+                </li>
+                <li class="nav-item menuItem">
+                  <a class="nav-link" href="#apoio">APOIO</a>
+                </li>
+
+                <input class="botaoNav" type="button" value="INSCREVA-SE" onclick="rolar_para('#fazerParte')">
+
+            </div>
+          </div>
+        </nav>
+
+        <div class="row">
+          <div class="col-12 headerTitle">
             <iframe style="margin-top: 3% ;margin-bottom: 5% ;width: 120%; position: relative; left: -10%; height:90vh;" src="https://www.youtube.com/embed/1ZUzGW_sUAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </header>
+</div>
+
+
 
   <!--
   <section id="visitantes">
@@ -70,6 +259,64 @@
       <span class="cadastros"></span> Cadastros na página
     </div>
   </section>-->
+
+  <section id="sobre">
+    <div class="container-fluid fundoRoxo sobreEvento">
+      <div class="conteudo">
+        <div class="row">
+          <div class="col sobre_title">
+            <!--class="sobre_title d-flex justify-content-center h-50-->
+            <span>
+              <colchete>[</colchete> SOBRE O EVENTO <colchete>]</colchete>
+            </span>
+            </span>
+          </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+          <div class="col-md-4">
+
+            <div class="card cartao">
+              <div class="card-img-top"><i class="fas fa-video"></i></div>
+              <div class="card-body">
+                <h5>DICAS PARA ENTREVISTAS ONLINE</h5>
+                <p class="card-text">Com os maiores especialistas e recrutadores do mercado te ajudando a conseguir o
+                  emprego dos seus sonhos!</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+
+            <div class="card cartao">
+              <div class="card-img-top"><i class="fas fa-briefcase"></i></div>
+              <div class="card-body">
+                <h5>MATERIAIS COMPLEMENTARES E +</h5>
+                <p class="card-text">Somente se inscrevendo você terá acesso aos materiais e outros benefícios exclusivos para os participantes do Enfrenta Brasil!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+
+            <div class="card cartao">
+              <div class="card-img-top"><i class="fab fa-linkedin-in"></i></div>
+              <div class="card-body">
+                <h5>O PODER DO LINKEDIN</h5>
+                <p class="card-text"><br>Como essa rede social pode te ajudar a encontrar vagas, mandar currículos e
+                  criar conexões com as empresas que você almeja.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+
+          <input class="btnSobreParticipar" type="button" value="INSCREVA-SE GRATUITAMENTE"
+            onclick="rolar_para('#fazerParte')">
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="participantes">
     <div class="container-fluid fundoRoxo participantes">
@@ -184,6 +431,55 @@
     </div>
   </section>
 
+  <section id="fazerParte">
+    <div class="container-fluid fundoRoxo formFazerParte">
+      <div class="row justify-content-md-center">
+        <div class="col-md-4">
+          <div class="card cartao">
+            <div class="card-body">
+              <h5>Quero fazer parte!</h5>
+
+              <form class="form" id="formFooter">
+                <div class="form-group">
+                  <input name="name" type="text" class="form-control inputNome2" placeholder="nome" oninvalid="this.setCustomValidity('Por favor, digite seu nome')"
+                  oninput="this.setCustomValidity('')" required>
+
+                  <div class="input-group mb-3">
+                    <input name="email" type="email" class="form-control inputEmail2" placeholder="seu melhor email"
+                      aria-label="seu melhor email" aria-describedby="inscrever" oninvalid="this.setCustomValidity('Por favor, coloque um email válido')"
+                      oninput="this.setCustomValidity('')" required>
+                  </div>
+                  <div class="row d-flex justify-content-md-center">
+                    <div class="col">
+                      <input class="btnFazerParte" type="submit" value="PARTICIPAR">
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <p class="card-text">Prometemos não utilizar suas informações de contato para enviar qualquer tipo de
+                SPAM.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col redesSociais">
+          <a alt="Linkedin" href="https://www.linkedin.com/company/lifeonelinebr" target="_blank"><img alt="Linkedin"
+              src="./img/linkedin.svg"></a>
+          <a alt="Instagram" href="http://instagram.com/lifeonelinebr" target="_blank"><img alt="Instagram"
+              src="./img/instagram.svg"></a>
+          <a alt="Facebook" href="http://facebook.com/lifeonelinebr" target="_blank"><img alt="Facebook"
+              src="./img/fb.svg"></a>
+          <a alt="Compartilhar" href="#" target="_blank"><img alt="Compartilhar" src="./img/share.svg"></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -203,7 +499,7 @@
     }
   </script>
 
-  <script src="scripts/livescript.js"></script>
+  <script src="scripts/script.js"></script>
 
 </body>
 
