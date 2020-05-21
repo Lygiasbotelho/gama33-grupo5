@@ -20,7 +20,8 @@
   <title>Webinar Enfrenta Brasil: Conquiste seu novo emprego durante a quarentena</title>
   <meta name=”description”
     content="Webinar gratuito e online para quem está buscando dicas, conteúdo e mentoria para conquistar um novo emprego e dar um up na carreira durante o isolamento social.">
-  <meta name="keywords" content="emprega, emprego, mentoria, recolocação, carreira, entrevista, mercado, evento, live, webinar" />
+  <meta name="keywords"
+    content="emprega, emprego, mentoria, recolocação, carreira, entrevista, mercado, evento, live, webinar" />
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -28,7 +29,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
   <link rel="stylesheet" href="styles/style.css">
-  
+
 
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
@@ -44,9 +45,37 @@
   <!-- End Google Tag Manager (noscript) -->
 
 
+  <div class="modal fade top" id="fimLive" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+    data-backdrop="true">
+    <div class="modal-dialog modal-frame modal-top modal-notify modal-success" role="document">
+      <!--Content-->
+      <div class="modal-content ">
+        <!--Body-->
+        <div class="modal-body fundoModal">
+          <div class="row d-flex justify-content-center align-items-center">
 
-  <div class="modal fade top" id="popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-    aria-hidden="true" data-backdrop="true">
+            <h2>
+              <span class="badge">Que ótimo que tenha participado!</span>
+            </h2>
+            <p class="pt-3 mx-5">
+              O <em>Enfrenta Brasil</em> está aqui para te ajudar!
+              <br>
+              Que tenha bastante sucesso na sua carreira.
+              <br>
+
+            </p>
+
+            <a type="button" class="btn waves-effec" data-dismiss="modal">
+              Obrigado</a>
+          </div>
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+
+  <div class="modal fade top" id="popup1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+    data-backdrop="true">
     <div class="modal-dialog modal-frame modal-top modal-notify modal-success" role="document">
       <!--Content-->
       <div class="modal-content ">
@@ -58,9 +87,9 @@
               <span class="badge">Ei! Não saia sem se inscrever!</span>
             </h2>
             <p class="pt-3 mx-5">
-              O <em>Enfrenta Brasil</em> será único! 
+              O <em>Enfrenta Brasil</em> será único!
               <br>
-              Então não perca a oportunidade de virar a chave. 
+              Então não perca a oportunidade de virar a chave.
               <br>
               <strong>Inscreva-se no formulário abaixo.</strong>
             </p>
@@ -120,7 +149,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item menuItem">
-                  <a class="nav-link" href="#sobre">SOBRE O EVENTO</a>
+                  <a class="nav-link" href="#sobre">SOBRE</a>
                 </li>
                 <li class="nav-item menuItem">
                   <a class="nav-link" href="#participantes">QUEM PARTICIPARA</a>
@@ -138,6 +167,8 @@
 
         <div class="row">
           <div class="col-md-7 headerTitle">
+
+
             <p class="txt1">webinar</p>
             <h1><em>ENFRENTA</em> <strong>BRASIL!</strong></h1>
 
@@ -162,8 +193,8 @@
             <form class="form-inline" id="emailForm">
               <div class="form-group">
                 <input name="name" type="text" class="form-control inputNome" placeholder="nome"
-                oninvalid="this.setCustomValidity('Por favor, digite seu nome')"
-                oninput="this.setCustomValidity('')" required>
+                  oninvalid="this.setCustomValidity('Por favor, digite seu nome')" oninput="this.setCustomValidity('')"
+                  required>
                 <div class="input-group mb-3">
                   <input name="email" type="email" class="form-control inputEmail" placeholder="seu melhor email"
                     aria-label="seu melhor email" aria-describedby="inscrever"
@@ -213,6 +244,19 @@
     </div>
 
   </section>
+  <section id="video">
+    <div class="container-fluid fundoRoxo video">
+      <div class="conteudo">
+        <!--https://www.youtube.com/embed/1ZUzGW_sUAU-->
+
+        <p>Vídeo disponibilizado durante a transmissão</p>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1ZUzGW_sUAU" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!--
   <section id="visitantes">
@@ -246,14 +290,15 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-md-4">
 
             <div class="card cartao">
               <div class="card-img-top"><i class="fas fa-briefcase"></i></div>
               <div class="card-body">
                 <h5>MATERIAIS COMPLEMENTARES E +</h5>
-                <p class="card-text">Somente se inscrevendo você terá acesso aos materiais e outros benefícios exclusivos para os participantes do Enfrenta Brasil!</p>
+                <p class="card-text">Somente se inscrevendo você terá acesso aos materiais e outros benefícios
+                  exclusivos para os participantes do Enfrenta Brasil!</p>
               </div>
             </div>
           </div>
@@ -311,7 +356,8 @@
               <img class="card-img-top" src="./img/GUSTAVO-BOESE.png" alt="Gustavo Boese">
               <div class="card-body">
 
-                <p class="card-text">Embaixador da Draper University no Brasil, bacharel em Sistemas de Informação e com MBA em gerenciamento de projetos. 
+                <p class="card-text">Embaixador da Draper University no Brasil, bacharel em Sistemas de Informação e com
+                  MBA em gerenciamento de projetos.
                   Apaixonado por tecnologia e pelo mercado empreendedor, hoje trabalha no lançamento do Projeto Baldur
                   uma, startup focada no ensino empreendedor para crianças e jovens entre 8 e 15 anos.</p>
               </div>
@@ -324,9 +370,11 @@
               <img class="card-img-top" src="./img/FELIPE-VEDAN.png" alt="Felipe Vedan">
               <div class="card-body">
 
-                <p class="card-text">                
-                  Entusiasta por inovação e vendas, Felipe Vedan é Co-Fundador da Você Tech, orientação profissional com foco em Inside Sales.  
-                  Administrador formado pela PUC - PR, possui mais de 10 anos de experiência em vendas e nos últimos anos entrou no mundo das startups e recrutamento.                   
+                <p class="card-text">
+                  Entusiasta por inovação e vendas, Felipe Vedan é Co-Fundador da Você Tech, orientação profissional com
+                  foco em Inside Sales.
+                  Administrador formado pela PUC - PR, possui mais de 10 anos de experiência em vendas e nos últimos
+                  anos entrou no mundo das startups e recrutamento.
                 </p>
               </div>
             </div>
@@ -338,10 +386,10 @@
               <div class="card-body">
 
                 <p class="card-text">
-                  MBA em Gestão de Novos Negócios e Inovação. Professor de Intra-empreendedorismo, 
+                  MBA em Gestão de Novos Negócios e Inovação. Professor de Intra-empreendedorismo,
                   Gestão de Pessoas e Prática Profissional. Experiência em projetos e políticas de Gestão
-                  e Negócios, Carreira e Gestão de Pessoas em todos os subsistemas com atividades de consultoria 
-                  para PME’s e Mentoria para empreendedores. 
+                  e Negócios, Carreira e Gestão de Pessoas em todos os subsistemas com atividades de consultoria
+                  para PME’s e Mentoria para empreendedores.
                 </p>
               </div>
             </div>
@@ -377,7 +425,7 @@
           <div class="col-md-3 logos">
             <img class="empresa3" src="./img/direito-noar.png">
           </div>
-         
+
         </div>
         <div class="row justify-content-md-center empresas">
           <div class="col-md-4 logos">
@@ -389,7 +437,7 @@
           <div class="col-md-4 logos">
             <img class="empresa2" src="./img/projeto-baldur-logo.png">
           </div>
-          
+
         </div>
       </div>
 
@@ -407,12 +455,14 @@
 
               <form class="form" id="formFooter">
                 <div class="form-group">
-                  <input name="name" type="text" class="form-control inputNome2" placeholder="nome" oninvalid="this.setCustomValidity('Por favor, digite seu nome')"
-                  oninput="this.setCustomValidity('')" required>
+                  <input name="name" type="text" class="form-control inputNome2" placeholder="nome"
+                    oninvalid="this.setCustomValidity('Por favor, digite seu nome')"
+                    oninput="this.setCustomValidity('')" required>
 
                   <div class="input-group mb-3">
                     <input name="email" type="email" class="form-control inputEmail2" placeholder="seu melhor email"
-                      aria-label="seu melhor email" aria-describedby="inscrever" oninvalid="this.setCustomValidity('Por favor, coloque um email válido')"
+                      aria-label="seu melhor email" aria-describedby="inscrever"
+                      oninvalid="this.setCustomValidity('Por favor, coloque um email válido')"
                       oninput="this.setCustomValidity('')" required>
                   </div>
                   <div class="row d-flex justify-content-md-center">

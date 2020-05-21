@@ -2,7 +2,7 @@ html, body{
     color: #FAFAFA;
     padding: 0px;
     margin: 0px;
-    font-family: Roboto;
+    font-family: 'Roboto';
 }
 .navbar-toggler {
     color: rgba(255, 255, 255, 0.5)!important;
@@ -59,8 +59,9 @@ header {
 
 .menuItem a:hover {
     /*background-color: #F6CEEC;*/
-    color: #FFF;
-    box-shadow: 4px 6px 0 0 #751682;
+   /* color: #FFF;
+    box-shadow: 4px 6px 0 0 #751682;*/
+    color: #D8D8D8;
 }
 .botaoNav{
     padding: 2px 30px;
@@ -72,6 +73,7 @@ header {
     border: none;
     color: #fff;
     font-weight: bold;
+    width: 170px;
 }
 .botaoNav:hover {
     background-color: #F6CEE3;
@@ -126,8 +128,20 @@ header {
     width: 335px;
     border-radius: 4px;
 }
-
+@media screen and (max-width: 1000px) {
+    .menuItem a{
+        text-align: right;
+    }
+   /* .menuItem a:hover {
+        color: #E6E6E6;
+        box-shadow: none;
+    }*/
+    .botaoNav{
+        margin-left: auto;
+    }
+}
 @media screen and (max-width: 600px) {
+   
     .header{
        box-sizing: border-box;
     }
@@ -389,4 +403,13 @@ colchete{
     background-color: #D70B52;
     color: #fff;
     font-weight: bold;
+}
+
+.video{
+    width: 100%;
+    /*border: 1px solid #fff;*/
+    padding: 20px;
+    text-align: center;
+    color: #848484;/*#F5A9D0;*/
+    font-size: 14px;
 }
