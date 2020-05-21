@@ -52,10 +52,13 @@ class CountDown {
     }
 
     updateView() {
-        set('.count-dias', ` ${this.getDifference().days}`)
-        set('.count-horas', ` : ${this.getDifference().hours} `)
-        set('.count-minutos', ` : ${this.getDifference().minutes} `)
-        set('.count-segundos', ` : ${this.getDifference().seconds} `)
+
+        set('.count-dias', ` ${this.getDifference().days}&nbsp;:&nbsp;`)
+        set('.count-horas', `${this.getDifference().hours}&nbsp;:&nbsp;`)
+        set('.count-minutos', `${this.getDifference().minutes}&nbsp;:&nbsp;`)
+        set('.count-segundos', `${this.getDifference().seconds}`)
+
+   
 
         const ifEvent = $('.if-event')
         const elseEvent = $('.else-event')
@@ -69,6 +72,7 @@ class CountDown {
             elseEvent.show()
             toggle = false
         }
+
     }
 
     async getCadastros(){
