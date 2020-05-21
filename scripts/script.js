@@ -59,7 +59,7 @@ class CountDown {
 
         const ifEvent = $('.if-event')
         const elseEvent = $('.else-event')
-        const eventOn = this.getDifference().seconds > 0
+        const eventOn = this.getDifference().seconds > -1
 
         if(eventOn){
             elseEvent.hide()
