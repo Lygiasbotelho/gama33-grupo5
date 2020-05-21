@@ -67,7 +67,7 @@ class CountDown {
         }else{
             ifEvent.hide()
             elseEvent.show()
-            window.location.href = './live.html'
+            //window.location.href = './live.html'
         }
     }
 
@@ -157,7 +157,7 @@ class Popup{
 }
 
 (function Main(){
-    const dataEvento = new CountDown(2020,4,20,15,0,0)
+    const dataEvento = new CountDown(2020,4,21,15,0,0)
     const popUp = new Popup('#popup')
     const email1 = new Email('#emailForm')
     const email2 = new Email('#formFooter')
