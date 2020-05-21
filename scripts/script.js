@@ -169,5 +169,6 @@ let toggle = true;
     const popUp = new Popup('#popup')
     const email1 = new Email('#emailForm')
     const email2 = new Email('#formFooter')
+    window.data = dataEvento
 })()
 
