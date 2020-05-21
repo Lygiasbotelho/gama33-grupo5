@@ -42,7 +42,7 @@ header {
 }
 .menu{
     background-color: transparent;
-    margin-bottom: 30px; 
+    margin-bottom: 20px; 
     padding-left: 0;
 }
 
@@ -108,7 +108,7 @@ header {
 }
 .headerForm {/*border: 1px solid yellow;*/
    margin-left: -10px;
-   padding-bottom: 20px;
+   padding-bottom: 10px;
 }
 
 .headerForm input{
@@ -164,16 +164,18 @@ header {
     height: 170px;
     font-weight: bold;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
 
 .lead{
-    font-size: 16px;
+    font-size: 18px;  margin: 0;
+    padding: 0;
 }
 .display-6{
     font-size: 40px;
 }
+
 .visitantes{
     background-color: #D40C55;
     text-align: right;
@@ -264,7 +266,7 @@ colchete{
     padding-bottom: 15px;
 }
 .apoiadores .logos{
-    padding: 10px 2px; /*border: solid 2px #fff;*/
+    padding: 10px 2px;/* border: solid 2px #fff;*/
     margin:0;
 }
 .apoiadores .empresa1{
@@ -287,6 +289,10 @@ colchete{
     height: 53px;
     width: auto;
     margin-top: 10px;
+}
+.apoiadores .empresa6{
+    width: 130px;
+    margin-top: 27px;
 }
 .participantes{
     padding-bottom: 70px;
