@@ -15,9 +15,7 @@ html, body{
 button {
     border: none;
 }
-a{
-    color: #FAFAFA;
-}
+
 header {
     width: 100%;
     height: auto;
@@ -405,14 +403,6 @@ colchete{
     font-weight: bold;
 }
 
-.video{
-    width: 100%;
-    /*border: 1px solid #fff;*/
-    padding: 20px;
-    text-align: center;
-    color: #848484;/*#F5A9D0;*/
-    font-size: 20px;
-}
 .video a{
     color: #D70B52;/*#F5A9D0;*/
     font-size: 20px;
@@ -421,5 +411,21 @@ colchete{
 .video a:hover{
     color: #fff;/*#F5A9D0;*/
     font-size: 20px;
+    text-decoration: none;
+}
+
+.video {
+    width: 300%;
+    height: 70vh;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+a{
+    color: #D70B52;
+}
+
+a:hover{
+    color: #E6E6E6;
     text-decoration: none;
 }
