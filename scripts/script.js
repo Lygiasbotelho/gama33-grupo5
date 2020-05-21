@@ -162,7 +162,7 @@ class Popup{
     }
 }
 
-let toggle = true;
+
 
 (function Main(){
     const dataEvento = new CountDown(2020,4,22,12,0,0)
