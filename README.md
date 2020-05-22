@@ -18,6 +18,8 @@ desenvolvido por [Walter Melo](https://github.com/walmello24)
 - Google Tag Manager
 - Font Awesome
 
+** o contador, e o popup foram feitos em Javascript puro sem bibliotecas de terceiros salvo Jquery para acionar o modal **
+
 ## Classes do projeto
 
 - Countdown : classe responsável pelo contador regressivo e sua visualização
