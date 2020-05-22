@@ -6,7 +6,7 @@
 desenvolvido por [Walter Melo](https://github.com/walmello24)
  e [Lýgia Botelho](https://github.com/Lygiasbotelho)
 
- - página index.html - representa o estado inicial
+ - página index.html - representa o estado atual
  - página before.html - representa o estado antes da live acontecer
 
 
