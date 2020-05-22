@@ -21,7 +21,7 @@ header {
     height: auto;
     min-height: 75%;
     /*background-image: linear-gradient(to right, #d60b51, #a81fba);*/
-    background-image: url("../img/BG-TOPO_menor_41kb.jpg");
+    background-image: url("../img/BG-TOPO_menor-14kb.webp");
     background-size: cover;
     background-position: center;
    /* padding: 10px 15% 50px 15%;*/
@@ -322,7 +322,7 @@ colchete{
     font-style: italic;
 }
 .formFazerParte{
-    background-image: url("../img/BG-FORM_menor_44kb.jpg");
+    background-image: url("../img/BG-FORM_menor-10kb.webp");
     background-size: cover;
     background-position: center;
 }
