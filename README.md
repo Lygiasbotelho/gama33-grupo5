@@ -27,4 +27,4 @@ desenvolvido por [Walter Melo](https://github.com/walmello24)
 ## Funções Auxiliares
 
 - Set : função para substituir o valor de uma tag com certa classe pelo valor de uma variável separando lógica de visualização
-- 
+- rolar_para : função para mudar o offset e mandar a tela do usuário para um lugar específico
